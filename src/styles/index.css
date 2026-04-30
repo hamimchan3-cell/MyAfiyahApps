@@ -1,0 +1,20 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Custom Map Markers */
+.custom-location-marker {
+  background: none !important;
+  border: none !important;
+}
+
+.custom-user-marker {
+  background: none !important;
+  border: none !important;
+}
+
+/* Ensure leaflet markers don't have default styling conflicts */
+.leaflet-marker-icon {
+  background: none !important;
+  border: none !important;
+}
