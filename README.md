@@ -45,32 +45,8 @@ npm install
 npm run dev
 ```
 
-### Supabase Setup
-1. Create a Supabase project.
-2. Copy `.env.example` to `.env` and set `VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY`.
-3. Open Supabase SQL Editor and run `SUPABASE_SETUP.sql`.
-4. In Supabase Auth settings, configure allowed redirect URLs if needed.
-5. Promote your admin account after signup:
 
-```sql
-update public.profiles
-set role = 'admin'
-where id = 'YOUR_AUTH_USER_UUID';
-```
 
-### For Android Export
-See **[QUICK_START.md](./QUICK_START.md)** for simple step-by-step instructions.
-
-## 📱 Export to Android Studio
-
-This app is ready to be exported as a native Android application using Capacitor.
-
-### Quick Export (5 steps):
-1. Install Capacitor packages
-2. Build the web app
-3. Add Android platform
-4. Configure permissions in AndroidManifest.xml
-5. Open in Android Studio
 
 **Full guide:** [ANDROID_EXPORT_GUIDE.md](./ANDROID_EXPORT_GUIDE.md)
 
